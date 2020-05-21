@@ -1,0 +1,15 @@
+.header-description {
+  //font-size: $small-font-size;
+  @include relative-font-size(1.2);
+  color: $grey-color;
+  white-space: nowrap;
+}
+.site-title {
+
+  line-height: unset;
+   > * {margin: 10px 20px 10px 0;float:left;}
+  a,
+  a:visited {
+    color: $grey-color-dark;
+  }
+}
