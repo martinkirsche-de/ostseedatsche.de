@@ -3,6 +3,12 @@ email: info@ostseedatsche.de
 description: Urlaub am Dünenstrand von Usedom
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+header_pages:
+  - bungalows.markdown
+  - lage.markdown
+  - umgebung.markdown
+  - anfrage.markdown
+  - kontakt.markdown
 
 # Build settings
 theme: minima
