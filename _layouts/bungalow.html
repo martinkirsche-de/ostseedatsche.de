@@ -91,9 +91,152 @@ layout: default
   {{ content }}
 
 
+<h2>Belegungskalender</h2>
+
+<div id="calendar">Buchungskalender wird geladen&hellip;</div>
+    <style>
+    #calendar table tr td.other-month {
+        visibility: hidden
+    }
+
+    #calendar table tr td.booked-start:not(.booked) {
+        background: linear-gradient(to right bottom, #6a9915 0%, #6a9915 52%, #CA3830 58%, #CA3830 100%);
+    }
+
+    #calendar table tr td.booked-end:not(.booked) {
+        background: linear-gradient(to right bottom, #CA3830 0%, #CA3830 42%, #6a9915 48%, #6a9915 100%);
+    }
 
 
+    #calendar table tr td.booked-start.booked-end {
+        background: linear-gradient(to right bottom, #CA3830 0%, #CA3830 42%, #6a9915 48%, #6a9915 52%, #CA3830 58%, #CA3830 100%);
+    }
 
+    #calendar table tr td.booked {
+        background-color: #CA3830;
+    }
+
+    #calendar table {
+        float: left;
+        padding: 0;
+        margin: 0.2em;
+        width: 24%;
+        border-spacing: 1px;
+        border-collapse: separate;
+        background-color: #f5f9ef
+    }
+
+    #calendar * {
+        font-size: x-small;
+    }
+
+    #calendar table tr th,
+    #calendar table tr td {
+        padding: 0 0.1em;
+        border-width: 0px;
+    }
+
+    #calendar table tr td {
+        text-align: right;
+        background-color: #6a9915;
+        color: #EEE;
+        text-align: center
+    }
+    </style>
+    <script type="text/javascript">
+    var apiKey = 'AIzaSyCwxULcNfBtNB7KnghFgR14D-7k-Sn5OHM';
+    var calendarId = 'martinkirsche.de_5isuc9u8l3bg4omptg78ea7r24@group.calendar.google.com';
+    var monthCount = 20;
+    var calendarElementId = 'calendar';
+
+    (function() {
+        var monthNames = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
+            'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'
+        ];
+
+        function normalizeWeekDay(day) {
+            return day === 0 ? 6 : day - 1;
+        }
+
+        function toDateName(date) {
+            return +date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
+        }
+
+        function addCalendar(element, year, month) {
+            var calendar = document.createElement('table');
+            calendar.innerHTML = '<tr><th colspan="7">' + monthNames[month] + ' ' + year + '</th></tr><tr><th>Mo</th><th>Di</th><th>Mi</th><th>Do</th><th>Fr</th><th>Sa</th><th>So</th></tr>';
+            element.appendChild(calendar);
+
+            var currentDate = new Date(year, month, 1);
+            currentDate.setDate(currentDate.getDate() - normalizeWeekDay(currentDate.getDay()));
+            for (var row = 0; row < 6; row++) {
+                var days = document.createElement('tr');
+                for (var column = 0; column < 7; column++) {
+                    var day = document.createElement('td');
+                    day.innerHTML = currentDate.getDate();
+                    if (currentDate.getMonth() != month) {
+                        day.className += ' other-month';
+                    }
+                    day.setAttribute('name', toDateName(currentDate));
+
+                    days.appendChild(day);
+                    currentDate.setDate(currentDate.getDate() + 1);
+                }
+                calendar.appendChild(days);
+            }
+        }
+
+        function addClassToElements(elements, className) {
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].className += ' ' + className;
+            }
+        }
+
+        function fillCalendar(data) {
+            var index;
+            for (index = 0; index < data.items.length; ++index) {
+                var item = data.items[index]
+                var startTime = new Date((item.start.dateTime || item.start.date));
+                var endTime;
+                if (item.end.dateTime) {
+                    endTime = new Date(item.end.dateTime);
+                } else {
+                    endTime = new Date(item.end.date);
+                    /* The day of 'All day'-entries is off by one day. */
+                    endTime.setDate(endTime.getDate() - 1);
+                }
+                var currentDate = new Date(startTime.getFullYear(), startTime.getMonth(), startTime.getDate() + 1);
+                var endDate = new Date(endTime.getFullYear(), endTime.getMonth(), endTime.getDate());
+                while (currentDate < endDate) {
+                    addClassToElements(document.getElementsByName(toDateName(currentDate)), 'booked');
+                    currentDate.setDate(currentDate.getDate() + 1);
+                }
+                addClassToElements(document.getElementsByName(toDateName(startTime)), 'booked-start');
+                addClassToElements(document.getElementsByName(toDateName(endTime)), 'booked-end');
+
+            }
+        }
+
+        var now = new Date();
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://www.googleapis.com/calendar/v3/calendars/' + calendarId + '/events?key=' + apiKey + '&maxResults=2500&orderBy=updated&timeMin=' + now.getFullYear() + '-' + (now.getMonth() + 1) + '-1T00%3A00%3A00%2B00%3A00&singleEvents=TRUE');
+        xhr.onload = function() {
+            var calendar = document.getElementById(calendarElementId);
+            if (xhr.status === 200) {
+                var currentDate = new Date(now.getFullYear(), now.getMonth(), 1);
+                calendar.innerHTML = '';
+                for (var month = 0; month < monthCount; month++) {
+                    addCalendar(calendar, currentDate.getFullYear(), currentDate.getMonth());
+                    currentDate.setMonth(currentDate.getMonth() + 1);
+                }
+                fillCalendar(JSON.parse(xhr.responseText));
+            } else {
+                calendar.innerHTML = 'Unser Buchungskalender steht momentan leider nicht zur verfügung.';
+            }
+        };
+        xhr.send();
+    })();
+    </script>
 
 <!-- Root element of PhotoSwipe. Must have class pswp. -->
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
