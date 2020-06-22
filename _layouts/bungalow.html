@@ -5,6 +5,8 @@ layout: default
 <style type="text/css">
 
 .gallery {
+  display: flex;
+  flex-direction: column;
   float:right;width: 30vw; max-width: 200px
 }
 
@@ -18,39 +20,13 @@ layout: default
   transition:all .6s cubic-bezier(0.165, 0.84, 0.44, 1)
 }
 
-.hacky-input {
-  display: none; /* Hide the input */
+.costs
+{
+  font-size: 12px;
+  width: 33vw;
 }
-
-.hacky-input:checked + label img {
-   transform:scale(1.1, 1.1);
-   z-index:999;
-   position: absolute;
-
-    left:0;
-  top:0;
-  right:0;
-  bottom:0;
-}
-
-
-
-.my-gallery {
-  width: 100%;
-  float: left;
-}
-.my-gallery img {
-  width: 100%;
-  height: auto;
-}
-.my-gallery figure {
-  display: block;
-  float: left;
-  margin: 0 5px 5px 0;
-  width: 150px;
-}
-.my-gallery figcaption {
-  display: none;
+.costs  th, .costs  td {
+  padding: 5px;
 }
 </style>
 
@@ -69,7 +45,8 @@ layout: default
     {% for file in page.gallery %}
     {% assign path = page.id | prepend: 'assets' | append: '/' | append: file | relative_url %}
 
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <figure style=" -webkit-flex: 0;
+  flex-shrink: 0;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
       <a href="{{ page.id | prepend: 'assets' | append: '/' | append: file | relative_url }}" itemprop="contentUrl" data-size="1000x1000"><!--{x% imagesize path:size %}-->
           <img src="{{ page.id | prepend: 'assets' | append: '/' | append: file | relative_url }}" itemprop="thumbnail" alt="{{file}}" />
       </a>
@@ -90,13 +67,124 @@ layout: default
 
   {{ content }}
 
+<h2>Preise</h2>
+
+
+
+
+
+
+    <table class="costs">
+<thead>
+<tr>
+  <th>Saison</th>
+  <th>Tagespreis</th>
+  <th>Wochenpreis</th>
+  <th>Reinigung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Zwischensaison</strong><br>03.05. - 20.06.20</td>
+  <td>60,00 €</td>
+  <td>390,00 €</td>
+  <td>45,00 €</td>
+</tr>
+<tr>
+  <td><strong>Hauptsaison</strong><br>20.06. - 05.09.20</td>
+  <td>85,00 €</td>
+  <td>590,00 €</td>
+  <td>45,00 €</td>
+</tr>
+<tr>
+  <td><strong>Zwischensaison</strong><br>05.09. - 10.10.20</td>
+  <td>60,00 €</td>
+  <td>390,00 €</td>
+  <td>45,00 €</td>
+</tr>
+<tr>
+  <td><strong>Nebensaison</strong><br>11.10. - 26.12.20</td>
+  <td>25,00 €</td>
+  <td>150,00 €</td>
+  <td>45,00 €</td>
+</tr>
+<tr>
+  <td><strong>Sylvester</strong><br>27.12. - 03.01.21</td>
+  <td>-</td>
+  <td>550,00 €</td>
+  <td>45,00 €</td>
+</tr>
+<tr>
+  <td><strong>Nebensaison</strong><br>02.01. - 13.03.21</td>
+  <td>25,00 €</td>
+  <td>150,00 €</td>
+  <td>45,00 €</td>
+</tr>
+<tr>
+  <td><strong>Vorsaison</strong><br>13.03. - 01.05.21</td>
+  <td>45,00 €</td>
+  <td>290,00 €</td>
+  <td>45,00 €</td>
+</tr>
+<tr>
+  <td><strong>Zwischensaison</strong><br>01.05. - 19.06.21</td>
+  <td>65,00 €</td>
+  <td>440,00 €</td>
+  <td>45,00 €</td>
+</tr>
+<tr>
+  <td><strong>Hauptsaison</strong><br>19.06. - 11.09.21</td>
+  <td>85,00 €</td>
+  <td>590,00 €</td>
+  <td>45,00 €</td>
+</tr>
+<tr>
+  <td><strong>Zwischensaison</strong><br>11.09. - 16.10.21</td>
+  <td>65,00 €</td>
+  <td>440,00 €</td>
+  <td>45,00 €</td>
+</tr>
+<tr>
+  <td><strong>Nebensaison</strong><br>16.10. - 25.12.21</td>
+  <td>25,00 €</td>
+  <td>150,00 €</td>
+  <td>45,00 €</td>
+</tr>
+<tr>
+  <td><strong>Sylvester</strong><br>25.12. - 01.01.22</td>
+  <td>-</td>
+  <td>550,00 €</td>
+  <td>45,00 €</td>
+</tr>
+</tbody>
+</table>
+
+<p>Wir obliegen den Rechten und Pflichten des deutschen Hotel- und Gaststättenverbandes und empfehlen den Abschluss einer <a href="https://www.reiseversicherung.de">Reiserücktrittsversicherung</a>. Im Falle einer Stornierung oder vorzeitiger Abreise wird die Ausfallzeit des Reisepreises berechnet.</p>
+
+<h2>Sonstige Kosten und Informationen</h2>
+
+<p>100,00 € Kaution, Verbrauchskosten für Heizung / Strom zu je 0,45 € / kWh = ca. 20,00 € - 60,00 € pro Woche.</p>
+
+<ul>
+<li>Bettwäschegarnituren, Hand- und Geschirrtücher müssen von meinen Gästen grundsätzlich mitgebracht werden. Gegen eine Gebühr von 15,00 € / Person kann ich Ihnen jedoch die Wäsche auch zur Verfügung stellen lassen.</li>
+<li>Die von Ihnen abzuführende Kurtaxe ist im Preis nicht enthalten.</li>
+</ul>
+
+<p>Die Buchung / Reservierung erfolgt über einen Mietvertrag und ist mit einer Anzahlung von 50 % zu bestätigen. Der Restbetrag ist spätestens 4 Wochen vor der Anreise zu entrichten.</p>
+
+
 
 <h2>Belegungskalender</h2>
 
 <div id="calendar">Buchungskalender wird geladen&hellip;</div>
     <style>
+    #calendar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     #calendar table tr td.other-month {
-        visibility: hidden
+        visibility: hidden;
     }
 
     #calendar table tr td.booked-start:not(.booked) {
@@ -117,10 +205,10 @@ layout: default
     }
 
     #calendar table {
-        float: left;
+
         padding: 0;
         margin: 0.2em;
-        width: 24%;
+        width: 20%;
         border-spacing: 1px;
         border-collapse: separate;
         background-color: #f5f9ef
@@ -146,7 +234,7 @@ layout: default
     <script type="text/javascript">
     var apiKey = 'AIzaSyCwxULcNfBtNB7KnghFgR14D-7k-Sn5OHM';
     var calendarId = 'martinkirsche.de_5isuc9u8l3bg4omptg78ea7r24@group.calendar.google.com';
-    var monthCount = 20;
+    var monthCount = 18;
     var calendarElementId = 'calendar';
 
     (function() {
@@ -222,7 +310,7 @@ layout: default
         xhr.open('GET', 'https://www.googleapis.com/calendar/v3/calendars/' + calendarId + '/events?key=' + apiKey + '&maxResults=2500&orderBy=updated&timeMin=' + now.getFullYear() + '-' + (now.getMonth() + 1) + '-1T00%3A00%3A00%2B00%3A00&singleEvents=TRUE');
         xhr.onload = function() {
             var calendar = document.getElementById(calendarElementId);
-            if (xhr.status === 200) {
+            if (xhr.status === 403) {
                 var currentDate = new Date(now.getFullYear(), now.getMonth(), 1);
                 calendar.innerHTML = '';
                 for (var month = 0; month < monthCount; month++) {
