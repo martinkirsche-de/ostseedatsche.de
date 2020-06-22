@@ -205,7 +205,6 @@ layout: default
     }
 
     #calendar table {
-
         padding: 0;
         margin: 0.2em;
         width: 20%;
@@ -310,7 +309,7 @@ layout: default
         xhr.open('GET', 'https://www.googleapis.com/calendar/v3/calendars/' + calendarId + '/events?key=' + apiKey + '&maxResults=2500&orderBy=updated&timeMin=' + now.getFullYear() + '-' + (now.getMonth() + 1) + '-1T00%3A00%3A00%2B00%3A00&singleEvents=TRUE');
         xhr.onload = function() {
             var calendar = document.getElementById(calendarElementId);
-            if (xhr.status === 403) {
+            if (xhr.status === 200) {
                 var currentDate = new Date(now.getFullYear(), now.getMonth(), 1);
                 calendar.innerHTML = '';
                 for (var month = 0; month < monthCount; month++) {
