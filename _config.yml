@@ -15,5 +15,3 @@ collections:
     permalink: /bungalow/:name
 # Build settings
 theme: minima
-plugins:
-  - jekyll-feed
