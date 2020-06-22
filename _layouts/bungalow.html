@@ -70,7 +70,7 @@ layout: default
     {% assign path = page.id | prepend: 'assets' | append: '/' | append: file | relative_url %}
 
     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="{{ page.id | prepend: 'assets' | append: '/' | append: file | relative_url }}" itemprop="contentUrl" data-size="1000x1000"><!--{% imagesize path:size %}-->
+      <a href="{{ page.id | prepend: 'assets' | append: '/' | append: file | relative_url }}" itemprop="contentUrl" data-size="1000x1000"><!--{x% imagesize path:size %}-->
           <img src="{{ page.id | prepend: 'assets' | append: '/' | append: file | relative_url }}" itemprop="thumbnail" alt="{{file}}" />
       </a>
 
