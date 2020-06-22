@@ -23,7 +23,8 @@ layout: default
 .costs
 {
   font-size: 12px;
-  width: 33vw;
+  width: 60%;
+  max-width: 500px;
 }
 .costs  th, .costs  td {
   padding: 5px;
@@ -179,8 +180,7 @@ layout: default
 <div id="calendar">Buchungskalender wird geladen&hellip;</div>
     <style>
     #calendar {
-        display: flex;
-        flex-wrap: wrap;
+
     }
 
     #calendar table tr td.other-month {
@@ -205,9 +205,10 @@ layout: default
     }
 
     #calendar table {
+        display: inline;
         padding: 0;
         margin: 0.2em;
-        width: 20%;
+        width: 50px;
         border-spacing: 1px;
         border-collapse: separate;
         background-color: #f5f9ef
