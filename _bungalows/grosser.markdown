@@ -52,7 +52,3 @@ Im Ort befindet sich u.a. ein Super-Markt mit Backshop und Fleisch-/ Wurstwarens
 
 - tägliche Anreise ab 16 Uhr, Abreise bis 10 Uhr (Abweichungen in der Uhrzeit ggf. nach Rücksprache möglich)
 - Mindestmietdauer beträgt grundsätzlich 3 Übernachtungen
-
-## Anfrage
-
-Interessiert? Senden Sie uns jetzt Ihre Anfrage.
