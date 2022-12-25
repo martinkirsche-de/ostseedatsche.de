@@ -1,6 +1,7 @@
 ---
 layout: bungalow
 title: Bungalow für 6 Personen
+calendar: martinkirsche.de_5isuc9u8l3bg4omptg78ea7r24@group.calendar.google.com
 properties:
     - 63 m² Wohnfläche
     - 6 Schlafplätze
