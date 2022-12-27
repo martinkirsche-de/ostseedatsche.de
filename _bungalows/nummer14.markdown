@@ -44,18 +44,3 @@ Im gegenüberliegenden Wohnbereich befindet sich ein Fernseher und die Klappcouc
 ## Badezimmer
 
 Das Bad ist mit Waschbecken, WC und einer Dusche ausgestattet.
-
-## Haustiere
-
-Tiere sind in der Wohnung leider nicht erlaubt.
-
-## Draußen
-
-Vor dem Bungalow befindet sich eine überdachte Terrasse mit Möbeln, Wäscheständer und Parkplatz vorhanden.
-
-Im Ort befindet sich u.a. ein Super-Markt mit Backshop und Fleisch-/ Wurstwarenstand. Zahlreiche Gaststätten, Fahrrad- und Strandkorbverleih und ein Sommerkino sind ebenfalls in Trassenheide vorhanden.
-
-## An- und Abreise
-
-- tägliche Anreise ab 17 Uhr, Abreise bis 10 Uhr (Abweichungen in der Uhrzeit ggf. nach Rücksprache möglich)
-- Mindestmietdauer beträgt grundsätzlich 3 Übernachtungen

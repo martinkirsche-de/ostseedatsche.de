@@ -3,28 +3,28 @@ layout: bungalow
 title: Günstiger Bungalow
 calendar: martinkirsche.de_aunj34befj2a1ejpgau5i11pm0@group.calendar.google.com
 properties:
-  - 45 m² Wohnfläche
-  - 4 Schlafplätze in zwei Zimmern
-  - eigene Kompaktküche und Bad
+    - 45 m² Wohnfläche
+    - 4 Schlafplätze in zwei Zimmern
+    - eigene Kompaktküche und Bad
 gallery:  
-  - image: schlafzimmer-1.jpg
-    width: 800
-    height: 1067
-  - image: aussen.jpg
-    width: 800
-    height: 1067
-  - image: dusche.jpg
-    width: 800
-    height: 1067
-  - image: kueche.jpg
-    width: 800
-    height: 1067
-  - image: schlafzimmer-2.jpg
-    width: 800
-    height: 1067
-  - image: wohnzimmer.jpg
-    width: 800
-    height: 1067
+    - image: aussen.jpg
+      width: 800
+      height: 1067
+    - image: schlafzimmer-1.jpg
+      width: 800
+      height: 1067
+    - image: dusche.jpg
+      width: 800
+      height: 1067
+    - image: kueche.jpg
+      width: 800
+      height: 1067
+    - image: schlafzimmer-2.jpg
+      width: 800
+      height: 1067
+    - image: wohnzimmer.jpg
+      width: 800
+      height: 1067
 ---
 
 ## Schlafen
@@ -46,13 +46,3 @@ Das Wohnzimmer bietet eine Eckcouch für den gemütlichen Fernsehabend.
 
 - separater Duschraum 
 - Bad mit Waschbecken, WC 
-
-## Haustiere
-
-Tiere sind in der Wohnung leider nicht erlaubt.
-
-## Draußen
-
-Vor dem Bungalow ist eine Grillgelegenheit, Wäscheständer und Parkplatz vorhanden.
-
-Im Ort befindet sich u.a. ein Super-Markt mit Backshop und Fleisch-/ Wurstwarenstand. Zahlreiche Gaststätten, Fahrrad- und Strandkorbverleih und ein Sommerkino sind ebenfalls in Trassenheide vorhanden.

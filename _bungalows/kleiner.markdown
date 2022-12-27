@@ -9,6 +9,9 @@ properties:
     - eigene Küche und Bad
     - ganzjährig nutzbar
 gallery:
+    - image: aussen.jpg
+      width: 800
+      height: 600
     - image: schlafzimmer.jpg
       width: 800
       height: 532
@@ -24,9 +27,6 @@ gallery:
     - image: bad.jpg
       width: 900
       height: 600
-    - image: aussen.jpg
-      width: 800
-      height: 600
 ---
 
 ## Schlafen
@@ -40,18 +40,3 @@ Die Küche besteht aus einer schönen neuen Küchenzeile mit Esstisch und drei S
 ## Badezimmer
 
 Das Bad ist mit Waschbecken, WC und einer begehbaren Dusche ausgestattet.
-
-## Haustiere
-
-Tiere sind in der Wohnung leider nicht erlaubt.
-
-## Draußen
-
-Vor dem Bungalow ist eine Grillgelegenheit, Wäscheständer und Parkplatz vorhanden.
-
-Im Ort befindet sich u.a. ein Super-Markt mit Backshop und Fleisch-/ Wurstwarenstand. Zahlreiche Gaststätten, Fahrrad- und Strandkorbverleih und ein Sommerkino sind ebenfalls in Trassenheide vorhanden.
-
-## An- und Abreise
-
-- tägliche Anreise ab 17 Uhr, Abreise bis 10 Uhr (Abweichungen in der Uhrzeit ggf. nach Rücksprache möglich)
-- Mindestmietdauer beträgt grundsätzlich 3 Übernachtungen
