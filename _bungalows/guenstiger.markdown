@@ -10,7 +10,7 @@ gallery:
   - schlafzimmer-1.jpg
   - aussen.jpg
   - dusche.jpg
-  - kuueche.jpg
+  - kueche.jpg
   - schlafzimmer-2.jpg
   - wohnzimmer.jpg
 ---

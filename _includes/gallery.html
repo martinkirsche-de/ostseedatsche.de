@@ -1,0 +1,32 @@
+
+<style type="text/css">
+
+.gallery img {
+  border-radius:5px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
+  position:relative;
+  border-radius:10px;
+  -webkit-transform:translateY(0);
+  transition:all .6s cubic-bezier(0.165, 0.84, 0.44, 1)
+}
+
+</style>
+
+<link rel="stylesheet" href="/assets/photoswipe/dist/photoswipe.css">
+<script type="module">
+import PhotoSwipeLightbox from '/assets/photoswipe/dist/photoswipe-lightbox.esm.js';
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#gallery',
+  children: 'a',
+  pswpModule: () => import('/assets/photoswipe/dist/photoswipe.esm.js')
+});
+lightbox.init();
+</script>
+
+<div id="gallery" class="gallery">
+  {% for file in include.images %}
+  <a href="{{ page.url | prepend: 'assets' | append: '/' | append: file | relative_url }}" target="_blank">
+    <img src="{{ page.url | prepend: 'assets' | append: '/' | append: file | relative_url }}" alt="{{file}}" />
+  </a>
+  {% endfor %}
+</div>

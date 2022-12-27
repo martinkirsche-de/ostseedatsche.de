@@ -7,7 +7,6 @@ header_pages:
   - index.markdown
   - lage.markdown
   - umgebung.markdown
-  - anfrage.markdown
   - kontakt.markdown
 collections:
   bungalows:
