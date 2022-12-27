@@ -4,18 +4,42 @@ title: Umgebung
 permalink: /umgebung/
 banner: /assets/umgebung.jpeg
 gallery:
-    - siedlung.jpg
-    - duenenweg.jpg
-    - kleckerburg.jpg
-    - ostsee.jpg
-    - strand.jpg
-    - strandkoerbe.jpg
-    - strandstrasse.jpg
-    - trassenheide.jpg
-    - wald.jpg
-    - wiese.jpg
-    - strandaufgang.jpg
-    - sonnenuntergang.jpg
+    - image: siedlung.jpg
+      width: 800
+      height: 600
+    - image: duenenweg.jpg
+      width: 800
+      height: 600
+    - image: kleckerburg.jpg
+      width: 800
+      height: 600
+    - image: ostsee.jpg
+      width: 800
+      height: 600
+    - image: strand.jpg
+      width: 800
+      height: 600
+    - image: strandkoerbe.jpg
+      width: 800
+      height: 600
+    - image: strandstrasse.jpg
+      width: 800
+      height: 600
+    - image: trassenheide.jpg
+      width: 800
+      height: 600
+    - image: wald.jpg
+      width: 800
+      height: 600
+    - image: wiese.jpg
+      width: 800
+      height: 600
+    - image: strandaufgang.jpg
+      width: 800
+      height: 1067
+    - image: sonnenuntergang.jpg
+      width: 800
+      height: 600
 ---
 
 <style type="text/css">

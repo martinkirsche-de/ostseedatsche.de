@@ -8,12 +8,24 @@ properties:
     - Wohnküche und Bad
     - ganzjährig nutzbar
 gallery:
-    - aussen.jpg
-    - bad-1.jpg
-    - kueche.jpg
-    - schlafzimmer.jpg
-    - terrasse.jpg
-    - wohnzimmer.jpg
+    - image: aussen.jpg
+      width: 1024
+      height: 768
+    - image: bad-1.jpg
+      width: 1024
+      height: 768
+    - image: kueche.jpg
+      width: 1024
+      height: 768
+    - image: schlafzimmer.jpg
+      width: 1024
+      height: 768
+    - image: terrasse.jpg
+      width: 1024
+      height: 768
+    - image: wohnzimmer.jpg
+      width: 1024
+      height: 768
 ---
 
 ## Schlafen

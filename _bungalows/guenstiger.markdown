@@ -7,12 +7,24 @@ properties:
   - 4 Schlafplätze in zwei Zimmern
   - eigene Kompaktküche und Bad
 gallery:  
-  - schlafzimmer-1.jpg
-  - aussen.jpg
-  - dusche.jpg
-  - kueche.jpg
-  - schlafzimmer-2.jpg
-  - wohnzimmer.jpg
+  - image: schlafzimmer-1.jpg
+    width: 800
+    height: 1067
+  - image: aussen.jpg
+    width: 800
+    height: 1067
+  - image: dusche.jpg
+    width: 800
+    height: 1067
+  - image: kueche.jpg
+    width: 800
+    height: 1067
+  - image: schlafzimmer-2.jpg
+    width: 800
+    height: 1067
+  - image: wohnzimmer.jpg
+    width: 800
+    height: 1067
 ---
 
 ## Schlafen

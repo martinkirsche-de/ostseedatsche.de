@@ -9,12 +9,24 @@ properties:
     - eigene Küche und Bad
     - ganzjährig nutzbar
 gallery:
-    - schlafzimmer.jpg
-    - kueche.jpg
-    - dusche.jpg
-    - boot.jpg
-    - bad.jpg
-    - aussen.jpg
+    - image: schlafzimmer.jpg
+      width: 800
+      height: 532
+    - image: kueche.jpg
+      width: 800
+      height: 533
+    - image: dusche.jpg
+      width: 1536
+      height: 2048
+    - image: boot.jpg
+      width: 600
+      height: 900
+    - image: bad.jpg
+      width: 900
+      height: 600
+    - image: aussen.jpg
+      width: 800
+      height: 600
 ---
 
 ## Schlafen

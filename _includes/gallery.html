@@ -24,9 +24,9 @@ lightbox.init();
 </script>
 
 <div id="gallery" class="gallery">
-  {% for file in include.images %}
-  <a href="{{ page.url | prepend: 'assets' | append: '/' | append: file | relative_url }}" target="_blank">
-    <img src="{{ page.url | prepend: 'assets' | append: '/' | append: file | relative_url }}" alt="{{file}}" />
+  {% for entry in include.images %}
+  <a href="{{ page.url | prepend: 'assets' | append: '/' | append: entry.image | relative_url }}" target="_blank" data-pswp-width="{{entry.width}}" data-pswp-height="{{entry.height}}" >
+    <img src="{{ page.url | prepend: 'assets' | append: '/' | append: entry.image | relative_url }}" alt="{{file}}" />
   </a>
   {% endfor %}
 </div>

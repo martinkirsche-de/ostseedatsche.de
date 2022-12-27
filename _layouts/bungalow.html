@@ -571,16 +571,18 @@ initPhotoSwipeFromDOM('.gallery');
 
 <p>Interessiert? Füllen Sie dieses Formular aus, um eine unverbindliche Anfrage zu stellen.</p>
 
-<p>Sie können uns auch telefonisch unter 0173/6564213 erreichen.</p>
+<p>Sie können uns auch telefonisch unter <a href="tel:+491736564213">+49 173 6564213</a> erreichen.</p>
 
 
 <form>
-  <input type="text" id="fname" name="fname" placeholder="Vorname">
-  <input type="text" id="lname" name="lname" placeholder="Nachname"><br/>
-  <input type="text" id="lname" name="lname" placeholder="E-Mail-Adresse"><br/>
-  <input type="text" id="lname" name="lname" placeholder="Telefonnummer"><br/>
-  <input type="text" id="lname" name="lname" placeholder="Straße / Hausnummer"><br/>
-  <input type="text" id="lname" name="lname" placeholder="Postleitzahl"> <input type="text" id="lname" name="lname" placeholder="Stadt">
+  <input type="hidden" name="bungalow" value="{{page.id}}">
+
+  <input type="text" name="vorname" placeholder="Vorname">
+  <input type="text" name="nachname" placeholder="Nachname"><br/>
+  <input type="email" name="email" placeholder="E-Mail-Adresse"><br/>
+  <input type="tel" name="telefon" placeholder="Telefonnummer"><br/>
+  <input type="text" name="strasse" placeholder="Straße / Hausnummer"><br/>
+  <input type="text" name="postleitzahl" placeholder="Postleitzahl"> <input type="text" name="stadt" placeholder="Stadt">
 
   <br/><br/>
 
@@ -604,9 +606,9 @@ initPhotoSwipeFromDOM('.gallery');
   <br/><br/>
   
   <label for="nachricht">Nachricht:</label><br/>
-  <textarea id="nachricht" name="nachricht" rows="8" cols="80"></textarea>
+  <textarea name="nachricht" rows="8" cols="80"></textarea>
 
   <br/><br/>
   
-  <input type="submit">
+  <input type="submit" value="Absenden">
 </form>
