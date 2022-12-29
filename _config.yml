@@ -1,5 +1,6 @@
 title: Ostseedatsche
 email: info@ostseedatsche.de
+phone: +49 173 6564213
 description: Urlaub am Dünenstrand von Usedom
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -8,6 +9,10 @@ header_pages:
   - lage.markdown
   - umgebung.markdown
   - kontakt.markdown
+footer_pages:
+  - kontakt.markdown
+  - lage.markdown
+  - impressum.markdown
 collections:
   bungalows:
     output: true
