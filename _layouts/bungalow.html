@@ -262,16 +262,15 @@ layout: default
 
 <p>Sie können uns auch telefonisch unter <a href="tel:+491736564213">+49 173 6564213</a> erreichen.</p>
 
-
-<form>
-  <input type="hidden" name="bungalow" value="{{page.id}}">
+<form action="https://www.ostseedatsche.de/submit.php" method="post">
+  <input type="hidden" name="bungalow" value="{{page.title}}">
 
   <input type="text" name="vorname" placeholder="Vorname">
   <input type="text" name="nachname" placeholder="Nachname"><br/>
   <input type="email" name="email" placeholder="E-Mail-Adresse"><br/>
   <input type="tel" name="telefon" placeholder="Telefonnummer"><br/>
-  <input type="text" name="strasse" placeholder="Straße / Hausnummer"><br/>
-  <input type="text" name="postleitzahl" placeholder="Postleitzahl"> <input type="text" name="stadt" placeholder="Stadt">
+  <input type="text" name="strasse" placeholder="Straße & Hausnummer"><br/>
+  <input type="text" maxlength="5" size="5" name="postleitzahl" placeholder="Postleitzahl"> <input type="text" name="ort" placeholder="Ort">
 
   <br/><br/>
 
@@ -289,8 +288,8 @@ layout: default
   <br/><br/>
 
   <label >Wann möchten Sie den Bungalow mieten?</label><br/>
-  <input type="date" /> bis 
-  <input type="date" />
+  <input name="von" type="date" /> bis 
+  <input name="bis" type="date" />
 
   <br/><br/>
   

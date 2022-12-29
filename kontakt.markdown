@@ -6,7 +6,7 @@ permalink: /kontakt/
 
 Sie können uns auch telefonisch unter <a href="tel:+491736564213">+49 173 6564213</a> erreichen.
 
-<form>
+<form action="https://www.ostseedatsche.de/submit.php" method="post">
   <input type="text" name="vorname" placeholder="Vorname">
   <input type="text" name="nachname" placeholder="Nachname"><br/>
   <input type="email" name="email" placeholder="E-Mail-Adresse"><br/>
