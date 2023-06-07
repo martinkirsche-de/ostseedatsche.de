@@ -50,6 +50,6 @@ $headers = "From: info@ostseedatsche.de" . "\r\n" .
 
 mail($to, $subject, $body, $headers);
 
-header("Location: http://beta.ostseedatsche.de/gesendet");
+header("Location: https://www.ostseedatsche.de/gesendet");
 exit();
 ?> 
