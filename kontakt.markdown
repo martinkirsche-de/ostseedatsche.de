@@ -18,6 +18,7 @@ Sie können uns auch telefonisch unter [+49 173 6564213](tel:+491736564213) erre
   <textarea name="nachricht" rows="8" cols="80"></textarea>
 
   <br/><br/>
-  
+  <input type="checkbox" name="checkbox" value="yes" style="position:absolute;left:-100px"/>
+  <input type="checkbox" name="uncheckbox" value="yes" style="position:absolute;left:-100px" checked/>
   <input type="submit" value="Absenden">
 </form>
