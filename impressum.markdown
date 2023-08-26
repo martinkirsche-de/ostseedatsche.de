@@ -5,8 +5,8 @@ permalink: /impressum/
 ---
 
 **Adresse**
-:    Hallstätter Str. 13
-     01279 Dresden
+:    Paracelsusstraße 6  
+     01237 Dresden
 
 **Telefon**
 :     +49 173 6 56 42 13
