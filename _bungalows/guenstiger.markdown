@@ -14,8 +14,8 @@ gallery:
       width: 800
       height: 1067
     - image: dusche.jpg
-      width: 800
-      height: 1067
+      width: 1600
+      height: 2133
     - image: kueche.jpg
       width: 800
       height: 1067
