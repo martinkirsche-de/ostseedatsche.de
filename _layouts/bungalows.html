@@ -4,37 +4,39 @@ layout: default
 
 <style type="text/css">
 
-.item {
-  max-width: 600px;width: 97.5%;margin: 1.25%;
+.bungalows {
+  display: flex; flex-flow: row wrap;
 }
 
-.container {
+.bungalow {   
+  max-width: 300px;
+  width: 97.5%;
   margin: 10px;
   box-shadow:0 5px 15px rgba(0,0,0,0.3);
   position:relative;
   border-radius:10px;
 }
 
-.container p {
+.bungalow p {
   text-align: right;
   margin-right: 10px;
+  margin-top: auto;
 }
 
-.container h3 {
+.bungalow h3 {
   margin: 10px;
   font-size: 24px;
 }
 
-.container img {
+.bungalow img {
   width:100%;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;
 }
 
-.container ul {
+.bungalow ul {
   margin: 15px 0px 0px 30px;
 }
-
-
-
 
 </style>
 
@@ -43,26 +45,27 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
   {{ content }}
-    <ul class="post-list">
+    
+    <div class="bungalows">
       {%- for bungalow in site.bungalows -%}
-      <li class="item">
-          <div class="container">
-            <a style="" href="{{ bungalow.url | relative_url }}">
-              <h3>{{ bungalow.title | escape }}</h3>
-              <img alt="{ bungalow.title | escape }}" src="{{ bungalow.id | prepend: 'assets' | append: '/aussen.jpg' | relative_url }}" />
-            </a>
-            <ul>
-            {%- for p in bungalow.properties -%}
-              <li>{{p}}</li>
-            {%- endfor -%}
-            </ul>
-            <p>
-              <a href="{{ bungalow.url | relative_url }}">mehr Details</a>
-            </p>
-          </div>
-      </li>
+      
+        <div class="bungalow" style=" display:flex; flex-flow: column nowrap;">
+          <a style="" href="{{ bungalow.url | relative_url }}">
+            <h3>{{ bungalow.title | escape }}</h3>
+            <img alt="{ bungalow.title | escape }}" src="{{ bungalow.id | prepend: 'assets' | append: '/aussen.jpg' | relative_url }}" />
+          </a>
+          <ul>
+          {%- for p in bungalow.properties -%}
+            <li>{{p}}</li>
+          {%- endfor -%}
+          </ul>
+          <p>
+            <a href="{{ bungalow.url | relative_url }}">mehr Details</a>
+          </p>
+        </div>
+    
       {%- endfor -%}
-    </ul>
+    </div>  
   </div>
 
 
