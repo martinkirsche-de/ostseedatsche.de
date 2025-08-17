@@ -1,53 +1,4 @@
 -  session: "Hauptsaison"
-   period: "15.06. - 07.09.24"
-   bungalow:
-     grosser: {day: 135, week: 945, cleaning: 80}
-     kleiner: {day: 95, week: 665, cleaning: 50}
-     guenstiger: {day: 80, week: 550, cleaning: 50}
-     nummer14: {day: 100, week: 700, cleaning: 50}
--  session: "Zwischensaison"
-   period: "07.09. - 02.11.24"
-   bungalow:
-     grosser: {day: 80, week: 550, cleaning: 80}
-     kleiner: {day: 70, week: 480, cleaning: 50}
-     guenstiger: {day: 55, week: 370, cleaning: 50}
-     nummer14: {day: 75, week: 510, cleaning: 50}
--  session: "Nebensaison"
-   period: "02.11. - 28.12.24"
-   bungalow:
-     grosser: {day: 45, week: 290, cleaning: 80}
-     kleiner: {day: 25, week: 150, cleaning: 50}
-     guenstiger: {day: no, week: no, cleaning: no}
-     nummer14: {day: 30, week: 200, cleaning: 50}
--  session: "Silvester"
-   period: "28.12. - 04.01.25"
-   bungalow:
-     grosser: {day: no, week: 770, cleaning: 80}
-     kleiner: {day: no, week: 560, cleaning: 50}
-     guenstiger: {day: no, week: no, cleaning: no}
-     nummer14: {day: no, week: 570, cleaning: 50}
--  session: "Nebensaison"
-   period: "01.01. - 18.03.25"
-   bungalow:
-     grosser: {day: 50, week: 350, cleaning: 80}
-     kleiner: {day: 25, week: 150, cleaning: 50}
-     guenstiger: {day: no, week: no, cleaning: no}
-     nummer14: {day: 20, week: 140, cleaning: 50}
--  session: "Vorsaison"
-   period: "18.03. - 26.04.25"
-   bungalow:
-     grosser: {day: 65, week: 450, cleaning: 80}
-     kleiner: {day: 45, week: 290, cleaning: 50}
-     guenstiger: {day: 50, week: 340, cleaning: 50}
-     nummer14: {day: 60, week: 400, cleaning: 50}
--  session: "Zwischensaison"
-   period: "26.04. - 14.06.25"
-   bungalow:
-     grosser: {day: 75, week: 520, cleaning: 80}
-     kleiner: {day: 70, week: 480, cleaning: 50}
-     guenstiger: {day: 55, week: 370, cleaning: 50}
-     nummer14: {day: 75, week: 510, cleaning: 50}
--  session: "Hauptsaison"
    period: "14.06. - 06.09.25"
    bungalow:
      grosser: {day: 135, week: 945, cleaning: 80}
@@ -75,3 +26,52 @@
      kleiner: {day: no, week: 560, cleaning: 50}
      guenstiger: {day: no, week: no, cleaning: no}
      nummer14: {day: no, week: 570, cleaning: 50}
+-  session: "Nebensaison"
+   period: "03.01. - 14.03.26"
+   bungalow:
+     grosser: {day: 50, week: 350, cleaning: 80}
+     kleiner: {day: 25, week: 150, cleaning: 50}
+     guenstiger: {day: no, week: no, cleaning: no}
+     nummer14: {day: 20, week: 140, cleaning: 50}
+-  session: "Vorsaison"
+   period: "14.03. - 25.04.26"
+   bungalow:
+     grosser: {day: 70, week: 490, cleaning: 80}
+     kleiner: {day: 45, week: 290, cleaning: 50}
+     guenstiger: {day: 50, week: 340, cleaning: 50}
+     nummer14: {day: 60, week: 400, cleaning: 50}
+-  session: "Zwischensaison"
+   period: "25.04. - 13.06.26"
+   bungalow:
+     grosser: {day: 80, week: 550, cleaning: 80}
+     kleiner: {day: 75, week: 520, cleaning: 50}
+     guenstiger: {day: 60, week: 420, cleaning: 50}
+     nummer14: {day: 80, week: 550, cleaning: 50}
+-  session: "Hauptsaison"
+   period: "13.06. - 05.09.25"
+   bungalow:
+     grosser: {day: 140, week: 980, cleaning: 80}
+     kleiner: {day: 100, week: 700, cleaning: 50}
+     guenstiger: {day: 85, week: 590, cleaning: 50}
+     nummer14: {day: 105, week: 730, cleaning: 50}
+-  session: "Zwischensaison"
+   period: "05.09. - 07.11.26"
+   bungalow:
+     grosser: {day: 85, week: 590, cleaning: 80}
+     kleiner: {day: 75, week: 520, cleaning: 50}
+     guenstiger: {day: 60, week: 420, cleaning: 50}
+     nummer14: {day: 80, week: 550, cleaning: 50}
+-  session: "Nebensaison"
+   period: "07.11. - 26.12.26"
+   bungalow:
+     grosser: {day: 45, week: 290, cleaning: 80}
+     kleiner: {day: 25, week: 150, cleaning: 50}
+     guenstiger: {day: no, week: no, cleaning: no}
+     nummer14: {day: 30, week: 200, cleaning: 50}
+-  session: "Sylvester"
+   period: "26.12. - 02.01.27"
+   bungalow:
+     grosser: {day: no, week: 790, cleaning: 80}
+     kleiner: {day: no, week: 590, cleaning: 50}
+     guenstiger: {day: no, week: no, cleaning: no}
+     nummer14: {day: no, week: 590, cleaning: 50}
