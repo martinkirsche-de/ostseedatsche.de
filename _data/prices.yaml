@@ -1,24 +1,3 @@
--  session: "Nebensaison"
-   period: "01.11. - 27.12.25"
-   bungalow:
-     grosser: {day: 45, week: 290, cleaning: 80}
-     kleiner: {day: 25, week: 150, cleaning: 50}
-     guenstiger: {day: no, week: no, cleaning: no}
-     nummer14: {day: 30, week: 200, cleaning: 50}
--  session: "Sylvester"
-   period: "27.12. - 03.01.26"
-   bungalow:
-     grosser: {day: no, week: 770, cleaning: 80}
-     kleiner: {day: no, week: 560, cleaning: 50}
-     guenstiger: {day: no, week: no, cleaning: no}
-     nummer14: {day: no, week: 570, cleaning: 50}
--  session: "Nebensaison"
-   period: "03.01. - 14.03.26"
-   bungalow:
-     grosser: {day: 50, week: 350, cleaning: 80}
-     kleiner: {day: 25, week: 150, cleaning: 50}
-     guenstiger: {day: no, week: no, cleaning: no}
-     nummer14: {day: 20, week: 140, cleaning: 50}
 -  session: "Vorsaison"
    period: "14.03. - 25.04.26"
    bungalow:
