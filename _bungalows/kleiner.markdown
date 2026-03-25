@@ -14,19 +14,19 @@ gallery:
       height: 600
     - image: schlafzimmer.jpg
       width: 800
-      height: 532
+      height: 1067
     - image: kueche.jpg
       width: 1600
       height: 1200
     - image: dusche.jpg
-      width: 1536
-      height: 2048
+      width: 800
+      height: 1067
     - image: boot.jpg
       width: 600
       height: 900
     - image: bad.jpg
-      width: 900
-      height: 600
+      width: 800
+      height: 1067
 ---
 
 ## Schlafen
